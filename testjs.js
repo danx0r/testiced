@@ -1,13 +1,14 @@
 dub = function (n, cb) {
     setTimeout(function () {
         cb(n*2)        
-    }, 2000)
+    }, 1000)
 }
 
 main = function(){
     dub(10, function(v){
-        console.log("result (in callback) of dub(10):", v);
-        console.log ("this runs last");
+	    dub(v, function(v2){
+	        console.log("result (in callback) of dub(10) ** 2:", v2);
+	    });
     });
 }
 
