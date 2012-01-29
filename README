@@ -1,0 +1,7 @@
+Very simple example chained callback code in javascript, coffeescript, and icedcoffeescript.
+
+testjs.js -- original js
+test.coffee -- coffee source
+test.js -- coffee compiled to js
+iced.coffee -- icedCoffeeScript source
+iced.js -- icedCoffeeScript compiled
